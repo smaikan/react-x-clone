@@ -1,0 +1,857 @@
+*{
+    font-family: "Open Sans", sans-serif;
+    scrollbar-color: rgb(62, 65, 68) rgb(22, 24, 28);
+
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    color: rgb(231, 233, 234);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.main {
+    display: flex;
+    width: 1265px;
+
+position: relative;
+
+
+
+
+
+}
+
+.akis {
+    width: 598px;
+   
+
+    border-right: 0.8px solid rgb(47, 51, 54);
+}
+
+.leftbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    width: 455px;
+    height: 100vh;
+    overflow: auto;
+    margin-left: 8px;
+
+
+
+
+
+}
+
+.rightbar {
+    position: sticky;
+    
+    align-self: flex-start;
+    
+    width: 350px;
+    height: min-content;
+    padding-right: 12px;
+    padding-bottom: 64px;
+
+}
+
+
+.rightdouble {
+    
+    display: flex;
+    gap: 30px;
+    border-left: 0.8px solid rgb(47, 51, 54);
+}
+
+
+
+
+.xlogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    margin-top: 2px;
+    padding: 6px;
+    border-radius: 100%;
+    transition: background-color 2ms;
+}
+
+.xlogo:hover {
+    background-color: #1C1C1C;
+}
+
+.nick {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    
+    font-size: 14px;
+    font-weight: 700;
+    height: 41.30px;
+    padding: 0 8px;
+    color: rgb(238, 238, 238);
+}
+
+
+
+.menu {
+    margin-top: 5px;
+    margin-bottom: 4px;
+
+}
+
+.menuitem {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+
+    color: rgb(231, 233, 234);
+    font-size: 20px;
+    padding: 12px 25px 12px 12px;
+    border-radius: 30px;
+    transition: background-color 0.2s ease;
+    width: max-content
+}
+
+.menu a:hover .menuitem {
+    background-color: #1C1C1C;
+}
+
+
+a {
+    text-decoration: none;
+
+}
+
+.buton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+    width: 90%;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 4px 0;
+    background-color: rgb(29, 155, 240);
+    color: rgb(231, 233, 234);
+    border-radius: 9999px;
+
+    transition: background-color 0.2s;
+}
+
+.buton:hover {
+    background-color: rgb(26, 138, 212);
+}
+
+.post {
+    display: flex;
+    padding: 12px 16px;
+    border-bottom: 0.8px solid rgb(47, 51, 54);
+    border-top: 0.8px solid rgb(47, 51, 54);
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.post:hover{
+    background-color: rgb(15, 15, 15);
+}
+
+
+
+.postuser {
+    display: flex;
+    align-items: start;
+    height: 20px;
+    gap: 5px;
+
+}
+
+.postname {
+    font-weight: 700;
+    font-size: 14px;
+}
+.postname:hover{
+    text-decoration: underline;
+}
+
+.postnick {
+    color: rgb(113, 118, 123);
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+.postdate {
+    margin-left: 5px;
+}
+
+.action {
+    height: 32px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    
+}
+.action div{
+    display: flex;
+    align-items: center;
+}
+
+.action div:nth-child(1):hover svg{
+    background-color: rgba(29, 155, 240, 0.10);
+    fill: rgb(29, 155, 240);
+}
+.action div:nth-child(1):hover span {
+    color: rgb(29, 155, 240);
+    
+    
+}
+.action div:nth-child(2):hover svg{
+    background-color: rgba(19, 161, 24, 0.10);
+    fill: rgb(19, 161, 24);
+}
+.action div:nth-child(2):hover span {
+    color: rgb(19, 161, 24);
+    
+    
+}
+
+.action div:nth-child(3):hover svg{
+    background-color: rgba(255, 0, 111, 0.10);
+    fill: rgb(255, 0, 111);
+}
+.action div:nth-child(3):hover span {
+    color: rgb(255, 0, 111);
+    
+    
+}
+
+.action div:nth-child(4):hover svg{
+    background-color: rgba(29, 155, 240, 0.10);
+    fill: rgb(29, 155, 240);
+}
+.action div:nth-child(4):hover span {
+    color: rgb(29, 155, 240);
+    
+    
+}
+.action div:nth-child(5) svg:hover  {
+    background-color: rgba(29, 155, 240, 0.10);
+    fill: rgb(29, 155, 240);
+}
+
+
+.inpost {
+    width: 100%;
+    
+}
+
+.text {
+    font-weight: 400;
+    font-size: 14px;
+    min-height: 20px;
+    align-self: flex-end;
+}
+
+.img {
+    display: block;
+    margin-top: 12px;
+    width: 516px;
+    border-radius: 16px;
+    
+    
+}
+
+.img img {
+    width: 100%;
+}
+
+.pp {
+
+    margin-right: 8px;
+}
+
+.pp img {
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.more {
+    width: 34.75px;
+    height: 34.75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -8px;
+    margin-left: auto;
+    border-radius: 100%;
+    transition: background-color 0.2s;
+
+
+}
+
+.more:hover {
+    background-color: rgba(29, 156, 240, 0.096);
+
+}
+.more:hover svg{
+    fill: rgb(29, 155, 240);
+}
+
+.more svg {
+    width: 18.75px;
+    height: 18.75px;
+    fill: rgb(113, 118, 123);
+}
+
+.set {
+    height: 110px;
+    padding: 0 16px;
+    padding-top: 8px;
+    display: flex;
+}
+
+.p {
+    margin-right: 8px;
+    padding-top: 9px;
+    display: flex;
+    align-items: baseline;
+}
+
+.p img {
+    border-radius: 9999px;
+}
+
+.setright {
+
+    padding: 16px 2px;
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: space-between;
+
+}
+
+.setright input {
+    background: none;
+    border: none;
+    outline: none;
+    color: rgb(231, 233, 234);
+    width: 100%;
+    padding: 2px 0;
+    margin-top: -4px;
+    font-size: 20px;
+    font-weight: 400;
+
+}
+
+.sharemore {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 8px;
+    margin-top: auto;
+    height: 48px;
+
+}
+
+.fullright {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+}
+
+.trend {
+    width: 100%;
+    margin-bottom: 16px;
+    border: 0.8px solid rgb(47, 51, 54);
+    border-radius: 20px;
+    
+    
+}
+.premium{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    height: 164px;
+    margin-bottom: 16px;
+    border: 0.8px solid rgb(47, 51, 54);
+    border-radius: 20px;
+    padding: 12px 16px;
+}
+.premium h1{
+    margin:0px;
+    font-size: 19px;
+    font-weight: 800;
+    color: rgb(231, 233, 234);
+}
+.premium p{
+    font-size: 14px;
+    font-weight: 400;
+    color:rgb(231, 233, 234);
+    margin:0px;
+}
+
+
+
+.trendhead {
+    padding: 12px 16px;
+    
+    
+    font-size: 19px;
+    font-weight: 800;
+    color: rgb(231, 233, 234);
+}
+
+.topic {
+    cursor: pointer;
+    padding: 12px 16px;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.2ms;
+}
+.topic:hover{
+    background-color: rgb(7, 7, 7);
+}
+
+.tab {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    border-bottom: 0.8px   solid rgb(47, 51, 54);
+    height: 53px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.700);
+    color: rgb(231, 233, 234);
+    backdrop-filter: blur(10px);
+}
+
+.tabbuton {
+
+    display: flex;
+    flex: auto;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+
+.tabbuton:hover {
+    background-color: rgba(239, 239, 239, 0.1);
+}
+
+.tabname {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    height: 100%;
+    color:rgb(113, 118, 123)
+
+}
+
+.konu {
+    display: flex;
+    font-size: 12px;
+    color: rgb(113, 118, 123);
+}
+
+.baslik {
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(231, 233, 234);
+    margin: 2px 0 0;
+    line-height: 20px;
+}
+
+.postcount {
+    margin: 4px 0 0;
+    font-size: 13px;
+    color: rgb(113, 118, 123);
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    width: 88px;
+    height: 36px;
+    border-radius: 9999px;
+    background-color: rgb(29, 155, 240);
+    color: rgb(231, 233, 234);
+    cursor: pointer;
+    outline: none;
+    transition-duration: 0.2s;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.submit:hover {
+
+    background-color: rgb(28, 139, 213);
+}
+
+.offsubmit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    width: 88px;
+    height: 36px;
+    border-radius: 9999px;
+    background-color:  rgb(15, 78, 120);
+    color: #9A9A9A;
+    font-size: 14px;
+    font-weight: 700;
+
+}
+
+
+.event {
+    display: flex;
+    align-items: center;
+
+}
+
+.icons {
+    width: 34.4px;
+    height: 34.4px;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 6px;
+    margin-left: -4px;
+}
+
+.icons:hover {
+    background-color: rgba(29, 156, 240, 0.12);
+}
+
+.icons svg {
+    height: 20px;
+    width: 20px;
+    fill: rgb(29, 155, 240);
+
+}
+
+.popover {
+
+    position: relative;
+
+
+}
+
+.poppanel {
+    position: absolute;
+    border: 0.8px solid rgb(47, 51, 54);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 12px 0;
+    background-color: black;
+
+}
+
+
+.pop {
+    
+
+    margin-top: auto;
+    margin-bottom: 12px;
+}
+
+.popbutton {
+
+
+    display: flex;
+
+    background: none;
+    max-height: 65.30px;
+    outline: none;
+    border: none;
+    padding: 12px;
+    border-radius: 9999px;
+    width: 100%;
+
+    align-items: center;
+    cursor: pointer;
+    justify-content: baseline;
+    transition: background-color 0.3s;
+}
+
+.popbutton:hover {
+    background-color: rgba(113, 118, 123, 0.238);
+}
+
+
+
+.stick {
+    position: absolute;
+    bottom: 0;
+    border-radius: 9999px;
+    height: 4px;
+    width: 100%;
+    background-color: rgb(29, 155, 240);
+}
+
+
+
+.action div svg{
+    width: 18.75;
+    height: 18.75;
+    fill: rgb(113, 118, 123);
+    padding: 8px;
+    margin: -8px;
+    transition: background-color 0.2s ;
+    border-radius: 9999px;
+}
+.action div span{
+    height:15.2px;
+      padding:0 4px;
+      font-size:13px;
+      font-weight:400;
+      color: rgb(113, 118, 123);
+      
+}
+.ppauth{
+    border-radius: 9999px;
+    width: 40px;
+    height: 40px;
+}
+
+.panelprofile {
+    cursor: pointer;
+
+    display: flex;
+
+    background: none;
+    max-height: 65.30px;
+    outline: none;
+    border: none;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    max-width: 100%;
+
+    align-items: center;
+
+    justify-content: baseline;
+    transition: background-color 0.2s;
+}
+.panelprofile:hover{
+    background-color: rgba(113, 118, 123, 0.238);
+}
+
+.stickpanel{
+    max-width: 100%;
+    height: 0.8px;
+    background-color: rgb(47, 51, 54) ;
+    margin: 12px 0;
+    
+}
+.panelmenu{
+    max-height: 44px;
+    max-width: 100%;
+    padding: 12px 16px;
+    font-weight: 700;
+    font-size: 14px;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+.panelmenu:hover{
+    background-color: rgba(113, 118, 123, 0.238);
+}
+
+.accountnick{
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(113, 118, 123);
+    
+}
+
+.accountname{
+    font-size: 14px;
+    font-weight: 700;
+    
+}
+
+.accountname2{
+    font-size: 14px;
+    font-weight: 700;
+}
+.accountname2:hover{
+    text-decoration: underline;
+}
+
+.searchdiv{
+    position: sticky;
+    top: 0;
+    height: 53px;
+    display: flex;
+    margin-bottom: 12px;
+    align-items: center ;
+    width: 100%;
+    background-color: black;
+}
+.search{
+    display: flex;
+    height: 42.4px;
+    width: 100%;
+    background-color: rgb(32, 35, 39);
+    border-radius: 9999px;
+    
+
+}
+
+.slogo{
+    width: 44px;
+    display: flex;
+    align-items: center;
+}
+
+.slogo svg{
+    fill: rgb(113, 118, 123);
+    padding-left: 20px;
+    padding-right: 6px;
+
+}
+.inputs{
+    padding: 12px;
+    width: 100%;
+    background-color: rgb(32, 35, 39) ;
+    outline: none;
+    border: none;
+    border-radius: 9999px;
+    color: rgb(231, 233, 234);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.addfriend{
+    width: 100%;
+    margin-bottom: 16px;
+    border: 0.8px solid rgb(47, 51, 54);
+    border-radius: 20px;
+
+
+}
+
+
+.friendheader{
+    font-size: 19px;
+    font-weight: 800;
+    color: rgb(231, 233, 234);
+    padding: 12px 16px;
+}
+
+.profilediv{
+    display: flex;
+    max-height: 65.30px;
+    padding: 12px;
+    
+    
+
+    align-items: center;
+    cursor: pointer;
+    justify-content: baseline;
+    transition: background-color 0.3s;
+
+
+}
+.profilediv:hover{
+    background-color: rgb(9, 9, 9);
+}
+.ortadiv{
+    display: flex;
+    width: 100%;
+    
+}
+.footer{
+    
+    width: 100%;
+    padding: 0 16px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.a{
+    margin: 2px 0;
+    padding-right: 12px;
+    font-size: 12px;
+    font-weight: 400;
+    text-overflow: unset;
+    line-height: 16px;
+    color: rgb(113, 118, 123);
+    display: inline-block;
+}
+.b{
+    margin: 2px 0;
+    padding-right: 12px;
+    font-size: 12px;
+    font-weight: 400;
+    text-overflow: unset;
+    line-height: 16px;
+    color: rgb(113, 118, 123);
+}
+.a:hover{
+    text-decoration: underline;
+}
+.message{
+    position:fixed;
+    height: 53px;
+    width: 400px;
+    box-sizing: border-box;
+    padding: 0 16px;
+    background-color: BLACK;
+    border-top-left-radius:16px;
+    border-top-right-radius:16px;
+    align-self: flex-end;
+    justify-self: flex-end;
+    right: 20px;
+    bottom: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), /* Hafif gölge efekti */
+                0 0 8px rgba(255, 255, 255, 0.410); /* Ekstra parlama için ek bir katman */
+    font-size: 19px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition-duration: 2ms;
+}
+
+.message .ma{
+    display: flex;
+    align-items: center;
+}
+.message .ma svg{
+    width: 20px;
+    height: 20px;
+    padding: 8px;
+    fill: rgb(239, 243, 244);
+    border-radius: 100%;
+    
+}
+.message .ma svg:hover{
+    background-color: #1C1C1C;
+}
